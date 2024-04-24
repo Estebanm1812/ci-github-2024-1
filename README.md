@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React Ap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 hi
@@ -7,7 +7,15 @@ hi
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+
+Run this command to install the modules that the program needs to run
+
+### `npm run build`
+
+Run this command to create the build of the app
+
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -69,3 +77,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Dockerfile
+After the application is working properly in local, create a Dockerfile that copy the configuration files and Packages.json that also run the commands mentioned before (Npm install, npm run build, npm run dev)
+
+### Creation of the Pipeline
+First Create Secrets for the User and Password of your Dockerhub account (if you dont have one, create it)
+
+Then go to git Actions and create a new action using as base Docker image, After that create the next steps:
+- Checkout
+- Build the docker image using as base the file it already has in the repository
+- Docker login using the secrets
+- Push into Dockerhub
+### Evidencies of the Pipeline working
+
+<img width="1064" alt="Captura de pantalla 2024-04-23 a la(s) 7 57 37 p  m" src="https://github.com/Estebanm1812/ci-github-2024-1/assets/69942961/1c7de9dc-b488-470d-bf5e-43d386262667">
+<img width="1433" alt="Captura de pantalla 2024-04-23 a la(s) 7 58 16 p  m" src="https://github.com/Estebanm1812/ci-github-2024-1/assets/69942961/d061ba16-ab3f-47f0-b16b-926c27ff8939">
