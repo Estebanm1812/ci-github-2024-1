@@ -89,7 +89,9 @@ Then go to git Actions and create a new action using as base Docker image, After
 - Build the docker image using as base the file it already has in the repository
 - Docker login using the secrets
 - Push into Dockerhub
-### Evidencies of the Pipeline working
+### Evidences of the Pipeline working
 
 <img width="1064" alt="Captura de pantalla 2024-04-23 a la(s) 7 57 37 p  m" src="https://github.com/Estebanm1812/ci-github-2024-1/assets/69942961/1c7de9dc-b488-470d-bf5e-43d386262667">
 <img width="1433" alt="Captura de pantalla 2024-04-23 a la(s) 7 58 16 p  m" src="https://github.com/Estebanm1812/ci-github-2024-1/assets/69942961/d061ba16-ab3f-47f0-b16b-926c27ff8939">
+### Evidences of the Image pushed into Docker Hub
+<img width="764" alt="Captura de pantalla 2024-04-23 a la(s) 7 59 19 p  m" src="https://github.com/Estebanm1812/ci-github-2024-1/assets/69942961/59c008e4-914e-428e-a956-99654138aff8">
